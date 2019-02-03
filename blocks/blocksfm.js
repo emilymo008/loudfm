@@ -88,13 +88,17 @@ function Floor() {
 }
 
 var para;
+var git;
 
 function setup() {
 	var canvas = createCanvas(1000, 610);
   para = createDiv('');
+  git = createDiv('');
   para.position(450, 116);
   para.style('width', '300px');
-  para.style('font-family', '')
+  para.style('font-family', '');
+  git.position(556, 89);
+  git.style('font-size', '11px')
 
 
 
@@ -114,6 +118,9 @@ var months = ['J', 'F', 'M', 'A', 'M', 'J', 'J', 'A', 'S', 'O', 'N', 'D'];
 
 function draw() {
   background(255, 255, 255);
+
+  git.html("<a href= \"https://github.com/emilymo008/loudfm\">(https://emilymo008.github.io/loudfm/)</a>")
+
 
   for (var i = 1; i < 49; i++) {
     if(frameCount == i*30) {
